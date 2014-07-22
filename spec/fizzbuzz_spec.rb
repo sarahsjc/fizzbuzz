@@ -12,4 +12,13 @@ describe Fizzbuzz do
     expect(Fizzbuzz.new.fizzbuzz(3)).to eq('fizz')
     expect(Fizzbuzz.new.fizzbuzz(6)).to eq('fizz')
   end
+
+  it "return 'buzz' if the number is dividable by 5" do
+    expect(Fizzbuzz.new.fizzbuzz(5)).to eq('buzz')
+    expect(Fizzbuzz.new.fizzbuzz(10)).to eq('buzz')
+  end
+
+  it "return nil if the number is not dividable by 3, 5 and 15" do
+    expect(Fizzbuzz.new.fizzbuzz(2)).to eq(nil)
+  end
 end
