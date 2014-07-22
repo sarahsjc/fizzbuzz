@@ -1,4 +1,0 @@
-fizzbuzz
-========
-
-Ruby homework
